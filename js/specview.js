@@ -771,7 +771,7 @@
 
 		
 		var neutralLossContainer = $(getElementSelector(container, elementIds.nl_choice));
-		neutralLossContainer.find("input").click(function() {
+		neutralLossContainer.find("input").change(function() {
 			container.data("selectedNeutralLossChanged", true);
             var selectedNeutralLosses = getNeutralLosses(container);
             container.data("options").peptide.recalculateLossOptions(selectedNeutralLosses, container.data("options").maxNeutralLossCount);
